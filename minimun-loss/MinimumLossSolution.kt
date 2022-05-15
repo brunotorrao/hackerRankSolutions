@@ -26,6 +26,18 @@ import java.util.concurrent.atomic.*
  */
 
 fun minimumLoss(price: Array<Long>): Int {
+
+  val arrSet = arr.toSet()
+  var count = 0;
+
+  arrSert.forEach { v ->
+    if (arrSet.contains(v-k)) {
+      count += 1
+    }
+  }
+
+
+
   // Write your code here
   var minLoss = AtomicLong(Long.MAX_VALUE);
 
